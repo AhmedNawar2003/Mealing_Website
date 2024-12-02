@@ -1,0 +1,27 @@
+@media (max-width:600px) {
+    .imgScroll img{
+        width: 300px;
+    }
+    .imgScroll .card{
+        align-items: center;
+    }
+    .imgScroll #lightBoxItem{
+        width: 350px !important;
+    }
+    .imgScroll #lightBoxItem i{
+        font-size: 20px !important;
+    }
+}
+/* ********************************************** */
+@media (max-width:400px) {
+    .imgScroll img{
+        width: 200px;
+    }
+    .imgScroll #lightBoxItem{
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .imgScroll #lightBoxItem i{
+        font-size: 18px !important;
+    }
+}

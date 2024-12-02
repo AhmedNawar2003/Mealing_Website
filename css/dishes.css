@@ -1,0 +1,146 @@
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url(fonts.css);
+@import url(shop.css);
+:root {
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
+}
+body {
+  font-family: Regular-fira;
+  font-size: 16px;
+  color: var(--black);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ******************************************* */
+/* ******************************************* */
+.home {
+  background-image: url(../img/dish_03-1.jpg);
+  background-position: top center;
+}
+/* ******************************************* */
+.about-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    cursor: pointer;
+    img {
+      border-radius: 24px;
+      transition: all 500ms;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .body-about {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+  .about-span {
+    background-color: var(--main);
+    color: var(--white);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    right: 40px;
+  }
+  .body-about h2 {
+    font-size: 24px;
+    color: var(--white);
+    font-family: Bold-fira;
+    transition: all 500ms;
+    &:hover {
+      color: var(--main);
+      cursor: pointer;
+    }
+  }
+  .body-about p {
+    font-size: 16px;
+    color: var(--white);
+    font-family: Regular-fira;
+    margin: 15px 0;
+  }
+  .body-about .cart {
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--red);
+    font-family: Bold-fira;
+    padding: 12px 40px;
+    transition: all 500ms;
+    border-radius: 36px;
+    &:hover {
+      background-color: var(--main);
+    }
+  }
+  /* ************************************************** */
+  .card-p {
+    width: 50%;
+    background-color: #f7f6f7;
+    border-radius: 24px;
+    padding: 20px;
+    margin-bottom: 30px;
+    p {
+      color: var(--black-light);
+    }
+    i {
+      color: var(--main);
+      font-size: 15px;
+      margin-inline-end: 10px;
+    }
+  }
+  .p-above {
+    color: var(--black);
+    font-size: 14px;
+    font-family: Regular-open-sans;
+  }
+  
+  /* ************************************************* */
+  .shop .card-smoothie{
+    align-items: center;
+  }

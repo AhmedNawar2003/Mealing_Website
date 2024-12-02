@@ -1,0 +1,253 @@
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url(fonts.css);
+@import url(cart.css);
+@import url(healthyFood.css);
+@import url(main.css);
+@import url(Responsive/shopPage.css);
+:root {
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
+}
+body {
+  font-family: Regular-fira;
+  font-size: 16px;
+  color: var(--black);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* ******************************************* */
+/* ******************************************* */
+.home {
+  background-image: url(../img/dish_03-1.jpg);
+  background-position: top center;
+}
+.home a {
+  transition: all 500ms;
+}
+/* ******************************************* */
+.shop {
+  padding: 80px 0;
+}
+.shop .card-ul {
+  height: 100%;
+  justify-content: center;
+}
+.shop ul {
+  padding: 20px;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.shop ul li a {
+  font-size: 14px;
+  color: var(--black);
+  font-family: Bold-open-sans;
+  transition: all 500ms;
+  text-transform: capitalize;
+  &:hover {
+    color: var(--main);
+  }
+}
+.shop ul li i {
+  color: var(--main);
+  margin-inline-end: 10px;
+  font-size: 15px;
+}
+.shop .card-img {
+  overflow: hidden;
+  border-radius: 24px;
+  text-align: center;
+}
+.shop .card-img img {
+  transition: all 500ms;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.shop .card-body {
+ text-align: center;
+}
+.shop .card-body h2 {
+  font-size: 24px;
+  font-family: Bold-fira;
+  color: var(--black);
+  transition: all 500ms;
+  &:hover {
+    color: var(--main);
+    cursor: pointer;
+  }
+}
+.shop .card-body p {
+  font-size: 14px;
+  font-family: Regular-open-sans;
+  color: var(--black);
+  margin: 15px 0;
+}
+.shop .card-body .price {
+  font-size: 24px;
+  font-family: Bold-fira;
+  color: var(--red);
+  margin-bottom: 15px;
+}
+.shop .card-body .cart {
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--red);
+  font-family: Bold-fira;
+  margin-bottom: 10px;
+  padding: 12px 40px;
+  transition: all 500ms;
+  border-radius: 36px;
+  &:hover {
+    background-color: var(--main);
+  }
+}
+/* ************************************** */
+.about-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  cursor: pointer;
+  img {
+    border-radius: 24px;
+    transition: all 500ms;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.body-about {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+.about-span {
+  background-color: var(--main);
+  color: var(--white);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+}
+.body-about h2 {
+  font-size: 24px;
+  color: var(--white);
+  font-family: Bold-fira;
+  transition: all 500ms;
+  &:hover {
+    color: var(--main);
+    cursor: pointer;
+  }
+}
+.body-about p {
+  font-size: 16px;
+  color: var(--white);
+  font-family: Regular-fira;
+  margin: 15px 0;
+}
+.body-about .cart {
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--red);
+  font-family: Bold-fira;
+  padding: 12px 40px;
+  transition: all 500ms;
+  border-radius: 36px;
+  &:hover {
+    background-color: var(--main);
+  }
+}
+/* ************************************************** */
+.card-p {
+  width: 50%;
+  background-color: #f7f6f7;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 30px;
+  p {
+    color: var(--black-light);
+  }
+  i {
+    color: var(--main);
+    font-size: 15px;
+    margin-inline-end: 10px;
+  }
+}
+.p-above {
+  color: var(--black);
+  font-size: 14px;
+  font-family: Regular-open-sans;
+}
+
+/* ************************************************* */
+.drinkBackground {
+  background-image: url(../img/01_smoothie-411x550.jpg);
+  background-position: bottom center;
+}
+.freshFruitsBackground {
+  background-image: url(../img/01_fruits.jpg);
+  background-position: center;
+}
+.healthFoodBackground {
+  background-image: url(../img/dish_05-1-550x550.jpg);
+  background-position: bottom center;
+}
+.nutritionBackground {
+  background-color: var(--black);
+}
+.smoothiesBackground {
+  background-image: url(../img/02_smoothie-411x550.jpg);
+  background-position: bottom center;
+}
+
+/************************************************* */
+.shop .card-smoothie{
+  align-items: center;
+}

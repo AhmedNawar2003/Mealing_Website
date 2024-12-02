@@ -1,23 +1,28 @@
-@media (max-width: 768px) {
-    .iframe .card-left {
-        padding-right: 0 !important;
+@media (max-width:768px) {
+    .information .card{
         margin-bottom: 30px;
     }
-    .iframe h3 {
-        font-size: 30px !important;
+    .message h2{
+        font-size: 20px !important;
     }
 }
-/* *************************************** */
-@media (max-width: 500px) {
-    .iframe h6,
-    .iframe p,
-    .iframe a{
-        font-size: 12px !important;
+/* ********************************************************/
+@media (max-width:500px) {
+    .message .form-control{
+        padding: 10px !important;
+        font-size: 10px !important;
     }
-    .iframe h3 {
-        font-size: 25px !important;
-    }
-    .iframe h5 {
-        font-size: 18px !important;
+    .message .btn{
+        font-size: 10px !important;
     }
 }
+/* ********************************************************/
+@media (max-width:400px) {
+    .information h3{
+        font-size: 14px !important;
+    }
+    .information i {
+        font-size: 15px !important;
+    }
+}
+/* ********************************************************/

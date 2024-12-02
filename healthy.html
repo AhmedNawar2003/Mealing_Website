@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy food</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/healthy.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                  <li>
+                    <a class="dropdown-item" href="login.html">My account</a>
+                  </li>
+                  <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+            </ul>
+            <form class="d-flex form">
+              <p></p>
+              <a class="btn" type="submit" id="menuBtn" href="shop.html"
+                >Get Menu</a
+              >
+              <a href="login.html"><i class="fa-thin fa-solid fa-user"></i></a>
+              <a href="cart.html"
+                ><i id="shop-cart" class="fa-thin fa-bag-shopping"></i
+              ></a>
+              <span id="cartNum">0</span>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- start home -->
+    <section class="home" id="homeContainer">
+      <div class="container-fluid">
+        <div class="row" id="home">
+          <div class="col">
+            <div class="card align-items-center">
+              <h1>Healthy food</h1>
+              <p href="#">
+                <a id="homeShop" href="index.html">Home</a> &nbsp; | &nbsp;
+                <a href="shop.html">Shop</a>
+                &nbsp; | &nbsp; Healthy food
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////// -->
+    <section class="shop">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="row" id="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="motzrella.html">
+                        <img
+                          src="img/dish_01-1-550x550.jpg"
+                          alt="Salad with Mozarella"
+                        />
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="motzrella.html"
+                        ><h2 class="card-h2">Salad with Mozarella</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$8.99</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="10"
+                        data-name="Salad with Mozarella"
+                        data-price="8.99"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="eggBacon.html">
+                        <img
+                          src="img/dish_02-1-550x550.jpg"
+                          alt="Eggs with Bacon and Salad"
+                      /></a>
+                    </div>
+                    <div class="card-body">
+                      <a href="eggBacon.html"
+                        ><h2 class="card-h2">Eggs with Bacon and Salad</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$7.99</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="11"
+                        data-name="Eggs with Bacon and Salad"
+                        data-price="7.99"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="salmonVege.html">
+                        <img
+                          src="img/dish_03-1.jpg"
+                          alt="Salmon with Vegetables"
+                      /></a>
+                    </div>
+                    <div class="card-body">
+                      <a href="salmonVege.html"
+                        ><h2 class="card-h2">Salmon with Vegetables</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$12.49</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="12"
+                        data-name="Salmon with Vegetables"
+                        data-price="12.49"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="redSoup.html">
+                        <img
+                          src="img/dish_04-1-550x550.jpg"
+                          alt="Red beetroot soup"
+                        />
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="redSoup.html">
+                        <h2 class="card-h2">Red beetroot soup</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$7.49</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="13"
+                        data-name="Red beetroot soup"
+                        data-price="7.49"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="steak.html">
+                        <img
+                          src="img/dish_05-1-550x550.jpg"
+                          alt="Steaks with Asparagus"
+                        />
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="steak.html"
+                        ><h2 class="card-h2">Steaks with Asparagus</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$10.00</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="26"
+                        data-name="Steaks with Asparagus"
+                        data-price="10.00"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="chicken.html">
+                        <img
+                          src="img/dish_07-1-550x550.jpg"
+                          alt="Chicken with Vegetables"
+                        />
+                      </a>
+                    </div>
+                    <div class="card-body">
+                      <a href="chicken.html"
+                        ><h2 class="card-h2">Chicken with Vegetables</h2></a
+                      >
+                      <p>Sed ut perspiciatis unde omnis iste natus error ...</p>
+                      <div class="price">$12.99</div>
+                      <a
+                        href="#"
+                        class="btn cart"
+                        data-id="15"
+                        data-name="Pineapple Splash"
+                        data-price="12.99"
+                        >Add to Cart</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////// -->
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="img">
+                <img src="img/logo-white.png" alt="" />
+              </div>
+              <p>
+                Integer maximus accumsan nunc, sit amet tempor lectus facilisis
+                eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam
+                varius.
+              </p>
+              <div class="icons">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card align-items-center">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="Blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="shop.html">Products</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <h3>Contact info</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-location-dot"></i>
+                  <span>
+                    <strong>Our location:</strong><br />
+                    Goldschmidtstraße 13, 04103 Leipzig
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-thin fa-phone"></i>
+                  <span>
+                    <strong>Phone:</strong><br />
+                    +49078-039-23-11<br />
+                    +49078-028-55-60
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- ///////////////////////// -->
+    <!-- side btn -->
+    <button class="btn btn-info" id="upToHome">
+      <i class="fa-thin fa-arrow-up"></i>
+    </button>
+    <!-- End side btn -->
+    <!-- ///////////////////// -->
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url(fonts.css);
+@import url(healthyFood.css);
+@import url(main.css);
+@import url(Responsive/pinablePage.css);
+@import url(Responsive/freshPage.css);
+:root {
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
+}
+body {
+  font-family: Regular-fira;
+  font-size: 16px;
+  color: var(--black);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.add-to-cart {
+  font-size: 16px;
+  width: fit-content;
+  color: var(--white);
+  background-color: var(--red);
+  font-family: Bold-fira;
+  padding: 12px 40px;
+  transition: all 500ms;
+  border-radius: 36px;
+  &:hover {
+    background-color: var(--main);
+    color: var(--white);
+  }
+}
+/* ******************************************* */
+.home {
+  background-image: url(../img/blog_12\ \(1\).jpg);
+  background-position: bottom center;
+}
+/* ******************************************* */
+/* start imgScroll */
+.imgScroll {
+    padding: 80px 0;
+}
+.imgScroll .card{
+    border-radius: 36px;
+    margin-bottom: 30px;
+}
+.imgScroll img{
+    cursor: pointer;
+    border-radius: 36px;
+}
+.imgScroll #lightBoxContainer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.652);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+ .imgScroll #lightBoxItem{
+    width: 700px;
+    height: 400px;
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+    border-radius: 36px;
+  }
+ .imgScroll #lightBoxItem i{
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+  }
+ .imgScroll #closeBtn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }

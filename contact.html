@@ -3,24 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact Us</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link
-      rel="shortcut icon"
-      href="img/apple-touch-icon-72x72-precomposed-ea6fb08063069270d41814bdcea6a36fee5fffaba8ec1f0be6ccf3ebbb63dddb.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" title="Mulk-logo">
-            <img src="img/logo.webp" alt="" />
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -32,18 +28,18 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon">
-              <i class="fa-light fa-bars"></i>
+              <i class="fa-solid fa-bars"></i>
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">portfolio</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -54,102 +50,112 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  pages
+                  Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="About.html">About</a></li>
+                  <li><a class="dropdown-item" href="shop.html">Shop</a></li>
                   <li>
-                    <a class="dropdown-item" href="service.html">service</a>
+                    <a class="dropdown-item" href="login.html">My account</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="singlePost.html"
-                      >Single post</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Blog.html">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">contact</a>
-              </li>
             </ul>
-            <button
-              class="btn toggle-right"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              title="toggle"
-            >
-              <i class="fa-light fa-bars"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="logo-img">
-                  <img src="img/mulk-logo.webp" alt="" />
-                </div>
-                <ul>
-                  <a href="portfolio.html"><li>portfolio</li></a>
-                  <a href="About.html"><li>About</li></a>
-                  <a href="service.html"><li>services</li></a>
-                  <a href="Blog.html"><li>Blog</li></a>
-                  <a href="contact.html" class="active"><li>contact</li></a>
-                </ul>
-                <div class="icons">
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-              </div>
-            </div>
+            <form class="d-flex form">
+              <p></p>
+              <a class="btn" type="submit" id="menuBtn" href="shop.html"
+                >Get Menu</a
+              >
+              <a href="login.html"><i class="fa-thin fa-solid fa-user"></i></a>
+              <a href="cart.html"
+                ><i id="shop-cart" class="fa-thin fa-bag-shopping"></i
+              ></a>
+              <span id="cartNum">0</span>
+            </form>
           </div>
         </div>
       </nav>
-      <div class="container">
+    </header>
+    <!-- End header -->
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- start home -->
+    <section class="home">
+      <div class="container-fluid">
         <div class="row">
           <div class="col">
-            <div class="card card-h1">
-              <h1>Contact</h1>
+            <div class="card align-items-center">
+              <h1>Contact Us</h1>
+              <p>
+                <a href="index.html">Home</a> &nbsp; | &nbsp; Contact Us
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- End header -->
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- start iframe -->
-    <section class="iframe">
+    </section>
+    <!-- /////////////////////////////////////////////////////////// -->
+    <!-- start information -->
+    <section class="information">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="card card-left">
-              <h6>We are ready to help</h6>
-              <h3>Get in Touch</h3>
-              <p class="left-p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-                adipiscing elit.
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <i class="fa-light fa-location-arrow"></i>
+              <h3>Location</h3>
+              <p>29 Nicolas str, New York, 987597-50</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <i class="fa-thin fa-phone"></i>
+              <h3>Phones</h3>
+              <p>
+                0(800) 890-90-609<br />
+                0(800) 890-90-620
               </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <i class="fa-thin fa-envelope"></i>
+              <h3>Email</h3>
+              <p>
+                sale@like-themes.com <br />
+                president@like-themes.com
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <i class="fa-thin fa-clock"></i>
+              <h3>Working Hours</h3>
+              <p>
+                Wednesday - Sunday<br />
+                7:00 AM - 5:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End information -->
+    <!-- ///////////////////////////////////////////////////////////// -->
+    <!-- start map -->
+    <section class="map">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6337.188013431479!2d-122.084089!3d37.42307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba027e1726a3%3A0xc13f05bafd623ef2!2sAmphitheatre%20Pkwy%2C%20Mountain%20View%2C%20CA%2094043!5e0!3m2!1sen!2sus!4v1727519270957!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d43771.7602054586!2d-74.207865!3d40.738142!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ac128a076313%3A0x7bf38cd5c0404ebb!2sSouth%20Mountain%20Reservation!5e1!3m2!1sen!2sus!4v1728842932114!5m2!1sen!2sus"
                 width="600"
-                height="600"
+                height="700"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -157,137 +163,125 @@
               ></iframe>
             </div>
           </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="card card-right">
-              <div class="fist-div">
-                <h5>Our Office</h5>
-                <p>Amphitheatre Parkway, Mountain View, California, 94043</p>
+        </div>
+      </div>
+    </section>
+    <!-- End map -->
+    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- start message -->
+    <section class="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <h2>send message</h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control w-50"
+                  id="name"
+                  placeholder="Your name"
+                />
               </div>
-              <div class="second-div">
-                <h5>Support</h5>
-                <div class="first-a">
-                  <a href="#"
-                    ><i class="fa-thin fa-envelope"></i>mail@mulk.agency</a
-                  >
-                </div>
-                <div class="second-a">
-                  <a href="#"><i class="fa-thin fa-phone"></i>+123 456 789</a>
-                </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control w-50"
+                  id="email"
+                  placeholder="Your email"
+                />
               </div>
-              <div class="third-div">
-                <h5>Business Hours</h5>
-                <div class="first">
-                  <div class="row">
-                    <div class="col-5">
-                      <div class="card">
-                        <p>Monday to Thursday</p>
-                      </div>
-                    </div>
-                    <div class="col-2">
-                      <div class="card">
-                        <div class="empty"></div>
-                      </div>
-                    </div>
-                    <div class="col-5">
-                      <div class="card">
-                        <p>09:00 - 17:00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="second">
-                  <div class="row">
-                    <div class="col-5">
-                      <div class="card">
-                        <p>Friday</p>
-                      </div>
-                    </div>
-                    <div class="col-2">
-                      <div class="card">
-                        <div class="empty"></div>
-                      </div>
-                    </div>
-                    <div class="col-5">
-                      <div class="card">
-                        <p>09:00 - 14:00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="third">
-                  <div class="row">
-                    <div class="col-5">
-                      <div class="card">
-                        <p>Saturday</p>
-                      </div>
-                    </div>
-                    <div class="col-2">
-                      <div class="card">
-                        <div class="empty"></div>
-                      </div>
-                    </div>
-                    <div class="col-5">
-                      <div class="card">
-                        <p>Closed</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="mb-3">
+                <textarea
+                  placeholder="Message"
+                  class="form-control w-50"
+                  id="textarea"
+                  rows="3"
+                  cols="40"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn">submit</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End iframe -->
-    <!-- /////////////////////////////////////////////////////////////// -->
+    <!-- End message -->
+    <!-- ///////////////////////////////////////////////////////////// -->
     <!-- start footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="logo">
-                <img src="img/logo.webp" alt="" />
+          <div class="col-lg-4 col-md-6">
+            <div class=" align-items-center">
+              <div class="img">
+                <img src="img/logo-white.png" alt="" />
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                Integer maximus accumsan nunc, sit amet tempor lectus facilisis
+                eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam
+                varius.
+              </p>
               <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <h6>Office</h6>
-              <p>Amphitheatre Parkway, Mountain View, California, 94043</p>
-              <a class="first-a"
-                ><i class="fa-thin fa-envelope"></i>mail@mulk.agency</a
-              >
-              <a class="second-a"
-                ><i class="fa-thin fa-phone"></i>+123 456 789</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Menu</h6>
-              <ul class="first-ul">
-                <li>services</li>
-                <li>features</li>
-                <li>pricing</li>
-                <li>testimonials</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card align-items-center">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="Blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="shop.html">Products</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="contact.html">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Links</h6>
-              <ul class="first-ul">
-                <li>About Us</li>
-                <li>contact</li>
-                <li>Help center</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <h3>Contact info</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-location-dot"></i>
+                  <span>
+                    <strong>Our location:</strong><br />
+                    Goldschmidtstraße 13, 04103 Leipzig
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-thin fa-phone"></i>
+                  <span>
+                    <strong>Phone:</strong><br />
+                    +49078-039-23-11<br />
+                    +49078-028-55-60
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -295,8 +289,17 @@
       </div>
     </footer>
     <!-- End footer -->
-    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////// -->
+    <!-- side btn -->
+    <button class="btn btn-info" id="upToHome">
+      <i class="fa-thin fa-arrow-up"></i>
+    </button>
+    <!-- End side btn -->
+    <!-- ///////////////////// -->
+    <!-- script links -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,193 @@
+@media (max-width: 1024px) {
+  .home h1 {
+    font-size: 32px !important;
+  }
+  .Product h1 {
+    font-size: 22px !important;
+  }
+  .Product .card-img {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 300px;
+    }
+  }
+  .results .card-imgs h2 {
+    font-size: 20px !important;
+  }
+  .describtion-and-review #collapseExample2 .second-p {
+    font-size: 20px !important;
+  }
+  .results .card-imgs .price {
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+  }
+  .footer h3 {
+    font-size: 20px !important;
+  }
+  .results .inner-card a {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+}
+/* ****************************************************************** */
+@media (max-width: 768px) {
+  .header .form span {
+    right: 526px !important;
+  }
+  .home h1 {
+    font-size: 25px !important;
+  }
+  .home p {
+    span {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+  }
+  .Product h1 {
+    font-size: 20px !important;
+  }
+  .add-to-cart {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+  .Product .number {
+    padding: 10px !important;
+    width: 40% !important;
+  }
+  .Product .number-card {
+    align-items: end;
+  }
+  .describtion-and-review #collapseExample2 .second-p {
+    font-size: 18px !important;
+  }
+  .describtion-and-review #collapseExample2 .submit {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+  }
+  .results .card-imgs img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .results .card-imgs h2 {
+    font-size: 15px !important;
+  }
+  .results .card-imgs .price {
+    font-size: 12px !important;
+  }
+  .results .inner-card a {
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+  }
+  .footer h3 {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 500px) {
+  .header .form span {
+    right: 200px !important;
+  }
+  .home h1 {
+    font-size: 20px !important;
+  }
+  .Product .price {
+    font-size: 15px !important;
+  }
+  .Product p {
+    font-size: 12px !important;
+  }
+  .add-to-cart {
+    padding: 8px !important;
+    font-size: 10px !important;
+  }
+  .Product .number {
+    padding: 5px !important;
+    width: 55% !important;
+  }
+  .describtion-and-review .head-p a {
+    font-size: 12px !important;
+  }
+  .describtion-and-review #collapseExample2 .second-p {
+    font-size: 14px !important;
+  }
+  .describtion-and-review #collapseExample1 .card-body {
+    font-size: 10px !important;
+  }
+  .describtion-and-review #collapseExample2 .first-p,
+  .describtion-and-review #collapseExample2 .third-p {
+    font-size: 10px !important;
+  }
+  .describtion-and-review #collapseExample2 .rating,
+  .describtion-and-review #collapseExample2 .review,
+  .describtion-and-review #collapseExample2 .name-label,
+  .describtion-and-review #collapseExample2 .email-label {
+    font-size: 12px !important;
+  }
+  .describtion-and-review #collapseExample2 .stars i {
+    font-size: 10px !important;
+  }
+  .describtion-and-review #collapseExample2 .form-control,
+  .describtion-and-review #collapseExample2 .textarea {
+    padding: 10px !important;
+  }
+  .describtion-and-review #collapseExample2 .submit {
+    font-size: 10px !important;
+  }
+  .results .inner-card a {
+    padding: 8px 8px !important;
+    font-size: 10px !important;
+    margin-bottom: 20px;
+  }
+  .footer h3 {
+    font-size: 14px !important;
+  }
+}
+/* ************************************************************* */
+@media (max-width: 400px) {
+  .header .form span {
+    right: 172px !important;
+  }
+  .home h1 {
+    font-size: 18px !important;
+  }
+  .home p {
+    span {
+      font-size: 10px !important;
+    }
+    a {
+      font-size: 10px !important;
+    }
+  }
+  .Product h1 {
+    font-size: 17px !important;
+  }
+  .Product .card-img {
+    img {
+      width: 200px !important;
+    }
+  }
+  .describtion-and-review #collapseExample2 .second-p {
+    font-size: 10px !important;
+  }
+  .describtion-and-review #collapseExample2 .rating,
+  .describtion-and-review #collapseExample2 .review,
+  .describtion-and-review #collapseExample2 .name-label,
+  .describtion-and-review #collapseExample2 .email-label {
+    font-size: 9px !important;
+  }
+  .describtion-and-review #collapseExample2 .stars i {
+    font-size: 8px !important;
+  }
+  .results .card-imgs h2,
+  .results .card-head h2 {
+    font-size: 12px !important;
+  }
+}
+/* ********************************************************** */
+@media (max-width: 330px) {
+    .header .form span {
+      right: 120px !important;
+    }
+}

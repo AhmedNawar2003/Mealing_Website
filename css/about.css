@@ -1,36 +1,34 @@
-@import url(all.min.css);
 @import url(bootstrap.min.css);
+@import url(all.min.css);
 @import url(fonts.css);
-@import url(static.css);
 @import url(main.css);
 @import url(Blog.css);
+@import url(Responsive/healthyFoodPage.css);
+@import url(Responsive/pinablePage.css);
 @import url(Responsive/aboutPage.css);
-/* ******************************* */
 :root {
-  --e-global-color-primary: #ffd369;
-  --e-global-color-secondary: #eeeeee;
-  --e-global-color-text: #222831;
-  --e-global-color-accent: #393e46;
-  --e-global-color-e777cd9: #ffffff;
-  --e-global-color-e632858: #ffffff00;
-  --e-global-color-cff305b: #f8f8f8;
-  --e-global-color-d59e8a8: #8b8b8b;
-  --e-global-color-9947692: #ffffffd1;
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
 }
 body {
-  font-family: Regular-DM-Sans;
-  color: var(--e-global-color-e777cd9);
+  font-family: Regular-fira;
   font-size: 16px;
-  font-weight: 400;
+  color: var(--black);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 0;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 img,
 iframe {
@@ -38,10 +36,19 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
-.btn:focus {
+.card {
   border: none;
-  outline: none;
-  box-shadow: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
 }
 li {
   list-style: none;
@@ -49,174 +56,94 @@ li {
 a {
   text-decoration: none;
 }
-.card {
-  background-color: transparent;
-  border: none;
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--black);
 }
-
-/* ********************************************* */
-/* start header */
-.header {
-  height: 390px;
-  background-image: url(../img/mulk14.webp);
+/* ******************************************* */
+.questions {
+  padding: 80px 0;
+  background-color: var(--gray);
 }
-.header .navbar-brand {
+.questions h3 {
+  font-family: Bold-fira;
+  font-size: 36px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+.questions p {
+  font-family: Regular-open-sans;
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.questions ul li {
+  font-family: Regular-open-sans;
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 15px;
   position: relative;
 }
-.header .under-logo {
-  position: absolute;
-  bottom: -20px;
-  left: 50px;
-  color: var(--e-global-color-d59e8a8);
-  font-family: Regular-inter;
-  text-transform: uppercase;
+.questions i {
+  color: var(--main);
+  margin-inline-end: 10px;
 }
-/* ************************************************* */
-.before-footer .watch-video {
-  background-color: var(--e-global-color-e777cd9);
-  border: 1px solid var(--e-global-color-text);
-  color: var(--e-global-color-text);
+.questions .first-ul li i {
+  color: var(--main);
+  font-size: 6px;
+  margin-inline-end: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: -15px;
+}
+.questions a {
+  background-color: var(--main);
+  border-radius: 36px;
+  margin-bottom: 30px;
+  color: var(--white);
   transition: all 500ms;
   &:hover {
-    background-color: var(--e-global-color-text);
-    color: var(--e-global-color-e777cd9);
-    i {
-      color: var(--e-global-color-e777cd9);
-    }
-  }
-  i {
-    margin-inline-end: 10px;
+    color: var(--main);
+    background-color: var(--black);
   }
 }
-/* **************************************************** */
-/* start creative-idea */
-.creative-idea {
-  padding: 120px 0;
-  background-color: var(--e-global-color-cff305b);
+.questions .accordion-header {
+  font-family: Bold-fira;
+  color: var(--black);
 }
-.creative-idea h6 {
-  color: var(--e-global-color-d59e8a8);
-  font-family: Regular-DM-Sans;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 16px;
-  letter-spacing: 0.5px;
+.questions .accordion-item {
+  border: none;
+  margin-bottom: 30px;
+  width: 70%;
+  background-color: transparent;
 }
-.creative-idea h2 {
-  color: var(--e-global-color-text);
-  font-family: Medium-DM-Sans;
-  font-size: 50px;
-  font-weight: 500;
-  line-height: 60px;
-  letter-spacing: -0.5px;
-  margin: 16px 0;
-}
-.creative-idea p {
-  color: var(--e-global-color-text);
-  font-size: 16px;
-  font-family: Medium-inter;
-}
-.creative-idea .p-two {
-  margin-top: 16px;
-  position: relative;
-  padding-bottom: 50px;
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: #ededed;
-    height: 1px;
-    bottom: -10px;
-    right: 0;
-    left: 0;
+.questions .accordion-item .accordion-button {
+  background-color: var(--main);
+  border-radius: 36px;
+  padding: 30px;
+  &:focus {
+    color: var(--black);
+    outline: none;
+    box-shadow: none;
   }
 }
-.creative-idea .icons {
-  gap: 100px;
-}
-.creative-idea .icons .first-span,
-.creative-idea .icons .second-span {
-  gap: 30px;
-}
-.creative-idea i {
-  font-size: 75px;
-  color: var(--e-global-color-primary);
-  position: relative;
-  top: 10px;
-}
-.creative-idea .text .number {
-  font-size: 45px;
-  color: var(--e-global-color-text);
-  font-family: Bold-inter;
-}
-.creative-idea .text .text-name {
-  font-size: 16px;
-  color: var(--e-global-color-text);
-  font-family: Regular-inter;
-  text-transform: capitalize;
-}
-.creative-idea .card-img{
-  overflow: hidden;
-}
-.creative-idea img {
-  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.1);
+.questions .accordion-body {
+  font-family: Regular-open-sans;
+  font-size: 14px;
+  color: var(--black);
+  margin-bottom: 15px;
+  background-color: transparent;
+  li {
+    list-style: disc;
   }
 }
-/* End creative-idea */
-/* **************************************************** */
-/* Start years */
-.years {
-  padding: 120px 0;
-}
-.years .row {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    background-color: #ededed;
-    height: 1px;
-    right: 0;
-    left: 0;
+.questions .accordion-item:first-child .accordion-button {
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
   }
-}
-.years .card {
-  align-items: center;
-  padding: 0 15px;
-}
-.years .year {
-  color: var(--e-global-color-d59e8a8);
-  font-size: 16px;
-  font-family: Regular-inter;
-  margin-bottom: 8px;
-  padding-top: 37px;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: -7px;
-    right: 12px;
-    background-color: var(--e-global-color-text);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+  
+  .questions .accordion-item:last-child .accordion-button {
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
   }
-}
-.years h5 {
-  color: var(--e-global-color-text);
-  font-size: 24px;
-  font-family: Regular-inter;
-  margin-bottom: 21px;
-}
-.years p {
-  color: var(--e-global-color-text);
-  font-size: 16px;
-  font-family: Regular-inter;
-  text-align: center;
-  padding: 0 40px;
-}
-/* End years */
-/* *************************************************** */

@@ -1,0 +1,73 @@
+@media (max-width: 1024px) {
+  .validation h2 {
+    font-size: 22px !important;
+  }
+  .validation label {
+    font-size: 18px !important;
+  }
+}
+/* ******************************************** */
+@media (max-width: 768px) {
+  .header .form span {
+    right: 435px !important;
+  }
+  .validation h2 {
+    font-size: 18px !important;
+  }
+  .validation label {
+    font-size: 15px !important;
+  }
+  .validation .form-control {
+    font-size: 14px !important;
+  }
+  .validation .btn {
+    padding: 10px 20px !important;
+    font-size: 12px !important;
+  }
+}
+/* ******************************************** */
+@media (max-width: 500px) {
+  .header .form span {
+    right: 140px !important;
+  }
+  .validation h2 {
+    font-size: 15px !important;
+  }
+  .validation label {
+    font-size: 12px !important;
+  }
+  .validation .form-control {
+    font-size: 10px !important;
+    padding:5px 10px !important;
+  }
+  .validation .btn {
+    padding: 10px !important;
+    font-size: 10px !important;
+  }
+}
+/* ******************************************** */
+@media (max-width: 400px) {
+    .header .form span {
+      right: 120px !important;
+    }
+    .validation h2 {
+      font-size: 13px !important;
+    }
+    .validation label {
+      font-size: 10px !important;
+    }
+    .validation .form-control {
+      font-size: 8px !important;
+      padding:5px 10px !important;
+    }
+    .validation .btn {
+      padding: 10px !important;
+      font-size: 8px !important;
+    }
+  }
+  /* ******************************************** */
+@media (max-width: 330px) {
+    .header .form span {
+      right: 85px !important;
+    }
+}

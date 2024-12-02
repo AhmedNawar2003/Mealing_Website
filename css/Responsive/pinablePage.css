@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  .describtion-and-review #collapseExample3 table td {
+    font-size: 15px !important;
+  }
+  .header .form span {
+    right: 526px !important;
+  }
+}
+/* ************************************************************** */
+@media (max-width: 500px) {
+  .Product .card-img img {
+    width: 150px !important;
+    margin-bottom: 20px;
+  }
+  .describtion-and-review #collapseExample3 table td {
+    font-size: 12px !important;
+  }
+  .results .card-imgs img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .header .form span {
+    right: 200px !important;
+  }
+}
+/* ************************************************************** */
+@media (max-width: 400px) {
+  .Product .card-img img {
+    width: 150px !important;
+    margin-bottom: 20px;
+  }
+  .describtion-and-review #collapseExample3 table td {
+    font-size: 10px !important;
+  }
+  .describtion-and-review .head-p a {
+    font-size: 10px !important;
+  }
+  .header .form span {
+    right: 170px !important;
+}
+}
+/* ************************************************************** */
+@media (max-width: 330px) {
+  .header .form span {
+    right: 120px !important;
+  }
+}

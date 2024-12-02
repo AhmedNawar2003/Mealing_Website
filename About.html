@@ -7,22 +7,17 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link
-      rel="shortcut icon"
-      href="img/apple-touch-icon-72x72-precomposed-ea6fb08063069270d41814bdcea6a36fee5fffaba8ec1f0be6ccf3ebbb63dddb.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" title="Mulk-logo">
-            <img src="img/logo.webp" alt="" />
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
           </a>
-          <p class="under-logo">About Us</p>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,272 +28,469 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon">
-              <i class="fa-light fa-bars"></i>
+              <i class="fa-solid fa-bars"></i>
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">portfolio</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle active"
+                  class="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  pages
+                  Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="shop.html">Shop</a></li>
                   <li>
-                    <a class="dropdown-item active" href="About.html">About</a>
+                    <a class="dropdown-item" href="login.html">My account</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="service.html">service</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="singlePost.html"
-                      >Single post</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Blog.html">Blog</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">contact</a>
+                <a class="nav-link active" href="Blog.html">Blog</a>
               </li>
             </ul>
-            <button
-              class="btn toggle-right"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              title="toggle"
-            >
-              <i class="fa-light fa-bars"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="logo-img">
-                  <img src="img/mulk-logo.webp" alt="" />
-                </div>
-                <ul>
-                  <a href="portfolio.html"><li>portfolio</li></a>
-                  <a href="About.html" class="active"><li>About</li></a>
-                  <a href="service.html"><li>services</li></a>
-                  <a href="Blog.html"><li>Blog</li></a>
-                  <a href="contact.html"><li>contact</li></a>
-                </ul>
-                <div class="icons">
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-              </div>
-            </div>
+            <form class="d-flex form">
+              <p></p>
+              <a class="btn" type="submit" id="menuBtn" href="shop.html"
+                >Get Menu</a
+              >
+              <a href="login.html"><i class="fa-thin fa-solid fa-user"></i></a>
+              <a href="cart.html"
+                ><i id="shop-cart" class="fa-thin fa-bag-shopping"></i
+              ></a>
+              <span id="cartNum">0</span>
+            </form>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card card-h1">
-              <h1>Build an online presence for your company</h1>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <!-- End header -->
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- start  creative-idea-->
-    <section class="creative-idea">
-      <div class="container">
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- start home -->
+    <section class="home">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="card">
-              <h6>Creative ideas</h6>
-              <h2>Business Solution</h2>
-              <p class="p-one">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit do
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <p class="p-two">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit do
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div class="icons d-flex mt-5">
-                <span class="d-flex first-span">
-                  <i class="fa-thin fa-bookmark"></i>
-                  <span class="text mx-md-1 text-3">
-                    <div class="number">29</div>
-                    <div class="text-name">Countries</div>
-                  </span>
-                </span>
-                <span class="d-flex second-span">
-                  <i class="fa-thin fa-crop-simple"></i>
-                  <span class="text mx-md-1 text-4">
-                    <div class="number">42</div>
-                    <div class="text-name">Designers</div>
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="card card-img">
-              <img src="img/mulk19.webp" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      </section>
-    <!-- End creative-idea-->
-    <!-- //////////////////////////////////////////////////////////////// -->
-    <section class="years">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <div class="card">
-              <div class="year">2003</div>
-              <h5>Global Biz</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                tempus nisl vitae magna pulvinar laoreet.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="card">
-              <div class="year">2009</div>
-              <h5>Headquarter</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                tempus nisl vitae magna pulvinar laoreet.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="card">
-              <div class="year">2017</div>
-              <h5>Int. Acquired</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                tempus nisl vitae magna pulvinar laoreet.
+          <div class="col">
+            <div class="card align-items-center">
+              <h1>Frequently Asked Questions</h1>
+              <p href="#">
+                <a href="index.html">Home</a> &nbsp; | &nbsp;
+                <a href="#">About</a> &nbsp; | &nbsp; Frequently Asked Questions
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /////////////////////////////////////////////////////////////// -->
-    <!-- Start before-footer -->
-    <section class="before-footer">
+    <!-- /////////////////////////////////////////////////////////// -->
+    <!-- start questions -->
+    <section class="questions">
       <div class="container">
-        <div class="row align-items-baseline">
-          <div class="col-lg-6 col-md-6">
-            <div class="card">
-              <h2>We design your business for your right customers​</h2>
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <h3>Every day help for our customers</h3>
+            <p>
+              Phasellus porta turpis a lectus dapibus aliquet. Maecenas arcu
+              est, consectetur eget ipsum ut, vulputate laoreet purus. Proin
+              facilisis sem non turpis vulputate semper. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <ul class="first-ul">
+              <li>
+                <i class="fa-sharp fa-solid fa-circle"></i>Broadband questions
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-circle"></i>Satelite TV and
+                Internet
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-circle"></i>High-speed WiFi
+                settings
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-circle"></i>About Connections
+              </li>
+            </ul>
+            <a href="#" class="btn">More Info</a>
           </div>
-          <div class="col-lg-6 col-md-6">
+          <div class="col-12">
             <div class="card">
-              <div class="row">
-                <div class="col-6">
-                  <div class="card">
-                    <a href="#" class="btn view"
-                      >view services <i class="fa-light fa-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="card">
-                    <a href="#" class="btn watch-video"
-                      ><i class="fa-light fa-play"></i> Watch video</a
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
                     >
+                      Is it possible to pay for an order with Visa and
+                      MasterCard payment cards?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Sed tincidunt lacus risus, eget suscipit sapien
+                          feugiat ac. Maecenas vitae accumsan odio, at venenatis
+                          libero. Suspendisse viverra placerat eros in
+                          venenatis.
+                        </li>
+                        <li>
+                          Vestibulum interdum ex eu dignissim eleifend. Morbi
+                          molestie libero orci, volutpat pulvinar ipsum
+                          efficitur non. Aliquam ut ligula augue. Pellentesque
+                          vel velit nec turpis fermentum consectetur a non
+                          sapien.
+                        </li>
+                        <li>
+                          Vestibulum ante ipsum primis in faucibus orci luctus
+                          et ultrices posuere cubilia Curae; Phasellus
+                          imperdiet, quam sit amet convallis tempor, nisl metus
+                          aliquet magna, et imperdiet nibh diam vel elit.
+                          Phasellus mollis ac augue sed varius.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    What payment methods exist in your company?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        Sed tincidunt lacus risus, eget suscipit sapien feugiat
+                        ac. Maecenas vitae accumsan odio, at venenatis libero.
+                        Suspendisse viverra placerat eros in venenatis.
+                      </li>
+                      <li>
+                        Vestibulum interdum ex eu dignissim eleifend. Morbi
+                        molestie libero orci, volutpat pulvinar ipsum efficitur
+                        non. Aliquam ut ligula augue. Pellentesque vel velit nec
+                        turpis fermentum consectetur a non sapien.
+                      </li>
+                      <li>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Phasellus imperdiet,
+                        quam sit amet convallis tempor, nisl metus aliquet
+                        magna, et imperdiet nibh diam vel elit. Phasellus mollis
+                        ac augue sed varius.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What is the validity period of the gift certificate?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        Sed tincidunt lacus risus, eget suscipit sapien feugiat
+                        ac. Maecenas vitae accumsan odio, at venenatis libero.
+                        Suspendisse viverra placerat eros in venenatis.
+                      </li>
+                      <li>
+                        Vestibulum interdum ex eu dignissim eleifend. Morbi
+                        molestie libero orci, volutpat pulvinar ipsum efficitur
+                        non. Aliquam ut ligula augue. Pellentesque vel velit nec
+                        turpis fermentum consectetur a non sapien.
+                      </li>
+                      <li>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Phasellus imperdiet,
+                        quam sit amet convallis tempor, nisl metus aliquet
+                        magna, et imperdiet nibh diam vel elit. Phasellus mollis
+                        ac augue sed varius.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Is it possible to pay by credit card?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        Sed tincidunt lacus risus, eget suscipit sapien feugiat
+                        ac. Maecenas vitae accumsan odio, at venenatis libero.
+                        Suspendisse viverra placerat eros in venenatis.
+                      </li>
+                      <li>
+                        Vestibulum interdum ex eu dignissim eleifend. Morbi
+                        molestie libero orci, volutpat pulvinar ipsum efficitur
+                        non. Aliquam ut ligula augue. Pellentesque vel velit nec
+                        turpis fermentum consectetur a non sapien.
+                      </li>
+                      <li>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Phasellus imperdiet,
+                        quam sit amet convallis tempor, nisl metus aliquet
+                        magna, et imperdiet nibh diam vel elit. Phasellus mollis
+                        ac augue sed varius.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFife">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFife"
+                    aria-expanded="false"
+                    aria-controls="collapseFife"
+                  >
+                    Can I return the product after purchase?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFife"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFife"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        Sed tincidunt lacus risus, eget suscipit sapien feugiat
+                        ac. Maecenas vitae accumsan odio, at venenatis libero.
+                        Suspendisse viverra placerat eros in venenatis.
+                      </li>
+                      <li>
+                        Vestibulum interdum ex eu dignissim eleifend. Morbi
+                        molestie libero orci, volutpat pulvinar ipsum efficitur
+                        non. Aliquam ut ligula augue. Pellentesque vel velit nec
+                        turpis fermentum consectetur a non sapien.
+                      </li>
+                      <li>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Phasellus imperdiet,
+                        quam sit amet convallis tempor, nisl metus aliquet
+                        magna, et imperdiet nibh diam vel elit. Phasellus mollis
+                        ac augue sed varius.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    How do I use a promotional code?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>
+                        Sed tincidunt lacus risus, eget suscipit sapien feugiat
+                        ac. Maecenas vitae accumsan odio, at venenatis libero.
+                        Suspendisse viverra placerat eros in venenatis.
+                      </li>
+                      <li>
+                        Vestibulum interdum ex eu dignissim eleifend. Morbi
+                        molestie libero orci, volutpat pulvinar ipsum efficitur
+                        non. Aliquam ut ligula augue. Pellentesque vel velit nec
+                        turpis fermentum consectetur a non sapien.
+                      </li>
+                      <li>
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia Curae; Phasellus imperdiet,
+                        quam sit amet convallis tempor, nisl metus aliquet
+                        magna, et imperdiet nibh diam vel elit. Phasellus mollis
+                        ac augue sed varius.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-12">
+            <h3 class="mt-5">If you need more help</h3>
+            <p>
+              Maecenas arcu est, consectetur eget ipsum ut, vulputate. Proin
+              facilisis sem non turpis vulputate semper. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.
+            </p>
+            <ul>
+              <li>
+                <i class="fa-sharp fa-solid fa-phone"></i> 0(800) 890-90-609
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> company@like-themes.com
+              </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-location-dot"></i> 29 Nicolas
+                str, New York, 987597-50
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <!-- /////////////////////////////////////////////////////////////// -->
+    <!-- End questions -->
+    <!-- ///////////////////////////////////////////////////////////// -->
     <!-- start footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
-              <div class="logo">
-                <img src="img/logo.webp" alt="" />
+              <div class="img">
+                <img src="img/logo-white.png" alt="" />
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                Integer maximus accumsan nunc, sit amet tempor lectus facilisis
+                eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam
+                varius.
+              </p>
               <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <h6>Office</h6>
-              <p>Amphitheatre Parkway, Mountain View, California, 94043</p>
-              <a class="first-a"
-                ><i class="fa-thin fa-envelope"></i>mail@mulk.agency</a
-              >
-              <a class="second-a"
-                ><i class="fa-thin fa-phone"></i>+123 456 789</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Menu</h6>
-              <ul class="first-ul">
-                <li>services</li>
-                <li>features</li>
-                <li>pricing</li>
-                <li>testimonials</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card align-items-center">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="Blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="shop.html">Products</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="contact.html">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Links</h6>
-              <ul class="first-ul">
-                <li>About Us</li>
-                <li>contact</li>
-                <li>Help center</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <h3>Contact info</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-location-dot"></i>
+                  <span>
+                    <strong>Our location:</strong><br />
+                    Goldschmidtstraße 13, 04103 Leipzig
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-thin fa-phone"></i>
+                  <span>
+                    <strong>Phone:</strong><br />
+                    +49078-039-23-11<br />
+                    +49078-028-55-60
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -306,8 +498,17 @@
       </div>
     </footer>
     <!-- End footer -->
-    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////// -->
+    <!-- side btn -->
+    <button class="btn btn-info" id="upToHome">
+      <i class="fa-thin fa-arrow-up"></i>
+    </button>
+    <!-- End side btn -->
+    <!-- ///////////////////// -->
+    <!-- script links -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

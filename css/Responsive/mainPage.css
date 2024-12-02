@@ -1,459 +1,369 @@
-@media (max-width: 1800px) {
-  .visual-identity .card-text {
-    transform: translateX(-32px) !important;
-  }
+@media (max-width: 1500) {
 }
+/* *************************************************************** */
 @media (max-width: 1024px) {
-  .header .toggle-right {
-    font-size: 18px !important;
-    margin-top: 3px !important;
+  .header .navbar .navbar-brand img,
+  .footer img {
+    width: 90px !important;
   }
-  .header h1 {
-    font-size: 50px !important;
+  .header .navbar .navbar-nav {
+    gap: 10px !important;
   }
-  .home .card-heading h2,
-  .future .card-head h2,
-  .marketing-design h2,
-  .last-section .card-head h2 {
-    font-size: 40px !important;
-  }
-  .visual-identity .card-img {
-    img {
-      width: 400px !important;
-    }
-  }
-  .visual-identity .card-right {
-    height: 100%;
-    justify-content: center;
-  }
-  .visual-identity .iphone-img {
-    img {
-      width: 80px !important;
-    }
-  }
-  .visual-identity .iphone-img {
-    top: 40.5% !important;
-  }
-  .visual-identity .card-text {
-    transform: translateX(0) !important;
-  }
-  .icon-section .text .number {
-    font-size: 30px !important;
-  }
-  .icon-section i {
-    font-size: 60px !important;
-  }
-  .marketing-design .card-text {
-    padding: 0 30px !important;
-  }
-  .marketing-design .card-img:hover {
-    width: 456px !important;
-  }
-  .last-section .card-body p {
-    font-size: 20px !important;
-  }
-  .before-footer h2 {
-    font-size: 35px !important;
-  }
-  .footer p {
-    font-size: 14px !important;
+  .avocado .card-ul ul li {
+    font-size: 12px !important;
   }
 }
-/* **************************************************** */
-@media (max-width: 992px) {
-  .header .toggle-right {
-    font-size: 18px !important;
-    margin-top: 3px !important;
+/* *************************************************************** */
+@media (max-width: 768px) {
+  .header .navbar .nav-link {
+    font-size: 12px !important;
   }
-  .header h1 {
-    font-size: 30px !important;
-    line-height: 60px !important;
-  }
-  .header h1::after {
-    bottom: -50px !important;
-  }
-  .navbar-nav {
-    gap: 20px;
-  }
-  .header .get-start,
-  .header .card-telephone a {
-    padding: 12px 0px !important;
-    margin-top: 50px;
-  }
-
-  .home .card-heading h2,
-  .future .card-head h2,
-  .marketing-design h2,
-  .last-section .card-head h2,
-  .visual-identity h3 {
-    font-size: 30px !important;
-  }
-  .visual-identity .accordion .accordion-header .accordion-button {
-    font-size: 20px !important;
-  }
-  .visual-identity .card-right {
-    margin-inline-start: 130px !important;
-  }
-  .visual-identity .card-img {
-    img {
-      width: 400px !important;
-    }
-  }
-  .visual-identity .card-right {
-    height: 100%;
-    justify-content: center;
-  }
-  .visual-identity .iphone-img {
-    img {
-      width: 80px !important;
-    }
-  }
-  .icon-section {
-    .card {
-      align-items: baseline !important;
-      margin-bottom: 20px;
-    }
-  }
-  .icon-section i {
-    font-size: 50px !important;
-  }
-  .visual-identity .iphone-img {
-    top: 40.5% !important;
-  }
-  .visual-identity .card-text {
-    transform: translateX(0) !important;
-  }
-  .icon-section .text .number {
-    font-size: 22px !important;
-  }
-  .icon-section .text {
-    position: relative;
-    bottom: 25px;
-  }
-  .marketing-design .card-img {
-    margin-bottom: 50px;
-  }
-  .bg-image h5 {
-    font-size: 15px !important;
-    margin-bottom: 30px !important;
-    padding-right: 0 !important;
-  }
-  .bg-image .card {
-    bottom: 50px;
-  }
-  .logos img {
-    width: 130px !important;
-    margin-bottom: 20px !important;
-  }
-  .marketing-design .card-text {
-    padding: 0 30px !important;
-  }
-  .marketing-design .card-img:hover {
-    width: 563px !important;
-  }
-  .last-section .card-body p,
-  .last-section .number {
-    font-size: 14px !important;
-  }
-  .before-footer h2 {
-    font-size: 25px !important;
-    line-height: 35px !important;
-  }
-  .before-footer a {
-    padding: 12px 20px !important;
-    font-size: 14px !important;
-    position: relative;
-    top: 10px;
-  }
-  .footer p {
-    font-size: 14px !important;
-  }
-  .footer .card-4 {
-    margin-top: 30px;
-  }
-  .home .card-head .border-bottom {
-    border: none !important;
-  }
+  .header .navbar {
+    padding: 10px 25px !important;
 }
-/* ****************************************************** */
-@media (max-width: 767px) {
-  .header .offcanvas .logo-img {
-    width: 70px !important;
-    margin-bottom: 25px !important;
+  .header .navbar .nav-item:hover::after {
+    display: none;
   }
-  .offcanvas a li {
-    font-size: 18px !important;
-  }
-  .offcanvas .icons {
-    margin-top: 25px !important;
-    i {
-      font-size: 15px !important;
-    }
-  }
-}
-
-/* ***************************************************** */
-@media (max-width: 600px) {
-  .header .get-start,
-  .header .card-telephone a {
+  .header .dropdown-menu{
     width: fit-content;
-    padding: 20px 40px !important;
   }
-  .header .get-start {
-    margin-top: 30px !important;
-  }
-  .header .card-video {
-    margin-top: 40px;
-  }
-  .header .card-telephone a {
-    margin-top: 10px !important;
-  }
-  .icon-section .text-1 {
-    margin-inline-start: 8px;
-  }
-  .icon-section .text-3 {
-    margin-inline-start: 12px;
-  }
-  .icon-section .text-4 {
-    margin-inline-start: 8px;
-  }
-  .marketing-design .card-img:hover {
-    width: auto !important;
-  }
-  .bg-image i {
-    font-size: 15px !important;
-    left: 124px !important;
-    top: 1px !important;
-  }
-  .bg-image span {
+  .header .dropdown-menu a{
     font-size: 12px !important;
   }
-  .bg-image .card {
-    padding: 0 !important;
+  .header .form p {
+    font-size: 14px !important;
   }
-  .icon-section i {
-    font-size: 25px !important;
-  }
-  .icon-section .text .number {
-    font-size: 15px !important;
-  }
-  .icon-section .text .text-name {
+  .header .form .btn {
     font-size: 12px !important;
   }
-  .icon-section .text {
-    position: relative;
-    bottom: 8px;
-  }
-  .footer .icons {
-    margin-bottom: 30px;
-  }
-  .before-footer h2 {
+  .header .form i {
     font-size: 15px !important;
-    line-height: 20px !important;
   }
-  .before-footer a {
-    padding: 7px 4px !important;
-    font-size: 10px !important;
+  .header .form span {
+    right: 466px !important;
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 8px;
+  }
+  .navbar-toggler-icon i {
+    font-size: 18px !important;
+  }
+  .navbar > .container-fluid,
+  .navbar > .container-lg,
+  .navbar > .container-md,
+  .navbar > .container-sm,
+  .navbar > .container-xl,
+  .navbar > .container-xxl {
+    align-items: baseline !important;
+  }
+  .carousel-dark .carousel-caption img {
+    width: 300px;
+  }
+  .home p,
+  .Testimonials p {
+    font-size: 14px !important;
+  }
+  .home .btn {
+    padding: 10px 20px !important;
+    font-size: 12px !important;
+  }
+  .carousel-dark .carousel-control-next-icon,
+  .carousel-dark .carousel-control-prev-icon {
+    width: 16px;
+  }
+  .about .card-head h2,
+  .onlineStore .card-head h2,
+  .Testimonials .card-head h2 {
+    font-size: 30px !important;
+  }
+  .about .body h2,
+  .onlineStore h2 {
+    font-size: 18px !important;
+  }
+  .about span {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 12px !important;
+  }
+  .about .body p,
+  .onlineStore .read {
+    font-size: 12px !important;
+  }
+  .about .body a,
+  .onlineStore .cart {
+    padding: 10px 20px !important;
+    font-size: 12px !important;
+  }
+  .avocado .card-ul ul li {
+    align-items: baseline;
+  }
+  .avocado .row {
+    justify-content: center;
+  }
+  .avocado .card-ul ul li {
+    span {
+      width: 20px !important;
+      height: 20px !important;
+      position: relative;
+      top: 2px;
+      i {
+        font-size: 12px !important;
+      }
+    }
+  }
+  .avocado img {
+    width: 200px;
+  }
+  .organicProduct .card-head h4 {
+    font-size: 24px !important;
+  }
+  .onlineStore .price {
+    font-size: 15px !important;
+  }
+  .Testimonials .icon i {
+    font-size: 20px !important;
+  }
+  .footer p {
+    font-size: 14px !important;
+  }
+  .footer h3 {
+    font-size: 20px !important;
+  }
+  .footer .icons span {
+    width: 25px !important;
+    height: 25px !important;
     i {
       font-size: 12px !important;
     }
   }
 }
-/* *********************************************** */
-@media (max-width: 450px) {
-  .header .navbar .navbar-brand,
-  .footer .logo {
-    width: 70px !important;
+/* *************************************************************** */
+@media (max-width: 500px) {
+  .header .form span {
+    right: 162px !important;
   }
-  .visual-identity .card-right {
-    margin-inline-start: 0 !important;
-  }
-  .navbar-toggler-icon i {
-    font-size: 12px;
-    position: relative;
-    top: 5px;
-  }
-  .header .toggle-right i {
-    font-size: 12px;
-    position: relative;
-    left: 10px;
-  }
+  .header .navbar {
+    padding: 8px 12px!important;
+}
   .header .navbar .nav-link {
     font-size: 10px !important;
   }
-  .header h1 {
-    font-size: 20px !important;
-    line-height: 45px !important;
-  }
-  .header p {
-    font-size: 14px !important;
-  }
-  .header .get-start,
-  .header .card-telephone a {
-    width: fit-content;
-    padding: 13px 24px !important;
-  }
-  .header .get-start {
-    i {
-      font-size: 14px;
-    }
-  }
-  .header .video {
-    width: 40px !important;
-    height: 40px !important;
-    i {
-      font-size: 15px !important;
-    }
-  }
-  .home .card-heading h2,
-  .future .card-head h2,
-  .marketing-design h2,
-  .last-section .card-head h2,
-  .visual-identity h3,
-  .about .card-body h4 {
-    font-size: 20px !important;
-  }
-  .marketing-design h2 {
-    line-height: 30px !important;
-  }
-  .marketing-design p,
-  .marketing-design h6,
-  .marketing-design a,
-  .about .card-body .first-p,
-  .home .card-body p,
-  .bg-image h5 {
-    font-size: 14px !important;
-  }
-  .home .card-head i {
-    font-size: 30px !important;
-  }
-  .home .card-body h5 {
-    font-size: 18px !important;
-  }
-  .about .last-p,
-  .home a,
-  .header .get-start {
-    font-size: 14px !important;
-  }
-  .home .card-head .number {
-    width: 20px !important;
-    height: 20px !important;
+  .header .dropdown-menu a{
     font-size: 10px !important;
-    top: -19px !important;
-    right: -14px !important;
   }
-  .visual-identity .iphone-img {
-    left: 0 !important;
+  .header .form p,
+  .header .form .btn {
+    font-size: 10px !important;
+  }
+  .navbar-toggler-icon i {
+    font-size: 14px !important;
+  }
+  .about .card-head h6,
+  .onlineStore .card-head h6,
+  .Testimonials .card-head h6 {
+    font-size: 25px !important;
+  }
+  .about .card-head h2,
+  .onlineStore .card-head h2,
+  .Testimonials .card-head h2 {
+    font-size: 20px !important;
+  }
+  .about span {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+  }
+  .about .body h2,
+  .onlineStore h2 {
+    font-size: 15px !important;
+  }
+  .about .body p,
+  .onlineStore .read,
+  .onlineStore .card-head p {
+    font-size: 10px !important;
+  }
+  .about .body a,
+  .onlineStore .cart {
+    padding: 8px 10px !important;
+    font-size: 8px !important;
+  }
+  .avocado .text-img,
+  .avocado .avocado-img {
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      width: 100px;
+    }
+  }
+  .organicProduct .card-head h4 {
+    font-size: 14px !important;
+  }
+  .organicProduct .img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .organicProduct h6 {
+    font-size: 14px !important;
+  }
+  .organicProduct p,
+  .onlineStore p,
+  .home p,
+  .Testimonials p {
+    font-size: 12px !important;
+  }
+  .onlineStore .img {
+    width: 150px;
+  }
+  .Testimonials h4 {
+    font-size: 14px !important;
+  }
+  .footer .align-items-center {
+    align-items: start !important;
+  }
+  .footer .icons {
+    margin-bottom: 30px;
   }
   .footer p,
-  .footer a,
+  .footer li a,
   .footer li {
     font-size: 10px !important;
   }
-  .footer .icons i {
-    font-size: 12px !important;
-  }
-  .footer h6 {
-    font-size: 13px !important;
-  }
-  .visual-identity .accordion .accordion-header .accordion-button {
+  .footer h3 {
     font-size: 15px !important;
   }
-  .visual-identity .accordion .accordion-body {
-    font-size: 12px !important;
-  }
-  .last-section .card-body p,
-  .last-section .number {
+  .footer li i {
     font-size: 10px !important;
   }
-  .last-section .number{
+  .footer .icons span {
+    width: 18px !important;
+    height: 18px !important;
+    i {
+      font-size: 8px !important;
+    }
+  }
+  .btn-info {
+    width: 20px;
+    height: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    i {
+      font-size: 8px !important;
+    }
+  }
+  .footer{
+    padding-bottom: 0 !important; 
+    ul{
+        margin-bottom: 0 !important;
+    }
   }
 }
-/* *************************************** */
-@media (max-width: 380px) {
-  .header h1 {
-    font-size: 18px !important;
-  }
-  .header h1::after {
-    bottom: -35px !important;
-  }
-  .header .navbar .navbar-brand {
-    width: 80px !important;
-  }
-  .about .last-p {
-    font-size: 10px !important;
-  }
-  .visual-identity .card-img {
-    img {
-      width: 290px !important;
-    }
-  }
-  .visual-identity .iphone-img {
-    img {
-      width: 50px !important;
-    }
-  }
-  .header .video {
-    width: 50px !important;
-    height: 50px !important;
-  }
-  .header .video {
-    i {
-      font-size: 18px !important;
-    }
-  }
-  .home .card-body h5 {
-    font-size: 15px !important;
-  }
-  .home .card-heading h2,
-  .future .card-head h2,
-  .marketing-design h2,
-  .last-section .card-head h2,
-  .visual-identity h3 {
-    font-size: 15px !important;
-    margin-bottom: 18px !important;
-  }
-  .marketing-design p,
-  .marketing-design h6,
-  .marketing-design a,
-  .about .card-body .first-p,
-  .home .card-body p,
-  .bg-image h5 {
-    font-size: 12px !important;
-  }
-  .home a,
-  .future .card-head a,
-  .header .get-start,
-  .marketing-design a {
-    padding: 12px 20px !important;
-    font-size: 10px !important;
-    i {
-      font-size: 10px !important;
-    }
-  }
-  .about .card-body h4 {
-    font-size: 17px !important;
-    margin-bottom: -20px;
-  }
-  .last-section .card-body .first-div{
-    font-size: 14px !important;
-  }
-  .icon-section .text .number {
-    font-size: 15px !important;
-  }
-  .icon-section i {
-    font-size: 31px !important;
-  }
-  .icon-section .text {
-    bottom: 17px !important;
-  }
-  footer .logo {
-    width: 75px !important;
+/* *************************************************************** */
+@media (max-width: 400px) {
+  .header .navbar .navbar-brand img,
+  .footer img {
+    width: 70px !important;
   }
   .navbar-toggler-icon i {
-    font-size: 15px;
+    font-size: 10px !important;
+  }
+  .header .form p,
+  .header .form .btn,
+  .header .navbar .nav-link {
+    font-size: 8px !important;
+  }
+  .about .card-head h2,
+  .onlineStore .card-head h2,
+  .Testimonials .card-head h2 {
+    font-size: 15px !important;
+  }
+  .header .form i {
+    font-size: 12px !important;
+  }
+  .header .form span {
+    right: 140px !important;
+    width: 10px !important;
+    height: 10px !important;
+    font-size: 7px !important;
+  }
+  .about span {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 6px !important;
+  }
+  .about .body h2,
+  .onlineStore h2 {
+    font-size: 12px !important;
+  }
+  .about .body p,
+  .onlineStore .read,
+  .onlineStore .card-head p {
+    font-size: 7px !important;
+  }
+  .about .body a,
+  .onlineStore .cart {
+    padding: 0px 4px !important;
+    font-size: 6px !important;
+  }
+  .about .body p {
+    margin: 5px 0 !important;
+  }
+  .organicProduct .card-head h4,
+  .organicProduct h6 {
+    font-size: 12px !important;
+  }
+  .organicProduct p,
+  .onlineStore p,
+  .home p,
+  .Testimonials p {
+    font-size: 8px !important;
+  }
+  .about .card-head h6,
+  .onlineStore .card-head h6,
+  .Testimonials .card-head h6 {
+    font-size: 18px !important;
+  }
+  .onlineStore .price {
+    font-size: 10px !important;
+  }
+  .Testimonials .icon i {
+    font-size: 10px !important;
+  }
+  .Testimonials h4 {
+    font-size: 10px !important;
+  }
+  .footer h3 {
+    font-size: 12px !important;
+  }
+  .footer p,
+  .footer li a,
+  .footer li,
+  .footer li i {
+    font-size: 8px !important;
+  }
+  .about .img img{
+    width: 150px;
+  }
+}
+/* *************************************************************** */
+@media (max-width: 330px) {
+  .header .navbar {
+    padding: 5px 25px!important;
+}
+  .header .form p,
+  .header .form .btn,
+  .header .navbar .nav-link {
+    font-size: 5px !important;
+  }
+  .header .dropdown-menu a{
+    font-size: 5px !important;
+  }
+  .header .form span {
+    right: 96px !important;
+  }
+  .about .card-head h2,
+  .onlineStore .card-head h2,
+  .Testimonials .card-head h2 {
+    font-size: 12px !important;
   }
 }

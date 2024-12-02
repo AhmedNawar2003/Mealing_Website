@@ -1,0 +1,64 @@
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url(fonts.css);
+@import url(shop.css);
+:root {
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
+}
+body {
+  font-family: Regular-fira;
+  font-size: 16px;
+  color: var(--black);
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  border: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.card-img{
+    overflow: hidden;
+}
+/* ******************************************* */
+/* ******************************************* */
+.home {
+  background-image: url(../img/pop_smoothie_01-720x1030.jpg);
+  background-position: center center;
+}
+/* ******************************************* */

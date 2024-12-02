@@ -1,34 +1,35 @@
-@import url(all.min.css);
 @import url(bootstrap.min.css);
+@import url(all.min.css);
 @import url(fonts.css);
-@import url(static.css);
 @import url(main.css);
-/* ******************************* */
+@import url(cart.css);
+@import url(Responsive/healthyFoodPage.css);
+@import url(Responsive/aboutPage.css);
+@import url(Responsive/blogPage.css);
+
 :root {
-  --e-global-color-primary: #ffd369;
-  --e-global-color-secondary: #eeeeee;
-  --e-global-color-text: #222831;
-  --e-global-color-accent: #393e46;
-  --e-global-color-e777cd9: #ffffff;
-  --e-global-color-e632858: #ffffff00;
-  --e-global-color-cff305b: #f8f8f8;
-  --e-global-color-d59e8a8: #8b8b8b;
-  --e-global-color-9947692: #ffffffd1;
+  --black: #292d35;
+  --black-darker: #000003;
+  --black-text: rgba(41, 45, 53, 1);
+  --black-light: rgba(41, 45, 53, 0.7);
+  --gray: #f3f5ed;
+  --gray-lighter: rgba(243, 245, 237, 0.5);
+  --white: #ffffff;
+  --white-text: rgba(255, 255, 255, 0.75);
+  --main: #8ec038;
+  --main-darker: #70a21a;
+  --main-lighter: rgba(142, 192, 56, 0.5);
+  --second: #da2424;
+  --red: #da2424;
 }
 body {
-  font-family: Regular-DM-Sans;
-  color: var(--e-global-color-e777cd9);
+  font-family: Regular-fira;
   font-size: 16px;
-  font-weight: 400;
+  color: var(--black);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 0;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 img,
 iframe {
@@ -36,10 +37,19 @@ iframe {
   height: 100%;
   object-fit: cover;
 }
-.btn:focus {
+.card {
   border: none;
-  outline: none;
-  box-shadow: none;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
 }
 li {
   list-style: none;
@@ -47,48 +57,93 @@ li {
 a {
   text-decoration: none;
 }
-.card {
-  background-color: transparent;
-  border: none;
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--black);
 }
-
-/* ********************************************* */
-/* start header */
-.header {
-  height: 390px;
-  background-image: url(../img/mulk15.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
+/* ******************************************* */
+/* start BigSecImg */
+.BigSecImg {
+  padding: 80px 200px;
 }
-.header .card-h1{
-    align-items: center;
+.BigSecImg .card {
+  align-items: center;
+  overflow: hidden;
+  border-radius: 24px;
+  margin-bottom: 30px;
+}
+.BigSecImg .card-body {
+  text-align: center;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+.BigSecImg .card-body a {
+  background-color: var(--main);
+  width: fit-content;
+  color: var(--white);
+  font-family: Bold-fira;
+  font-size: 12px;
+  padding: 6px 30px;
+  border-radius: 24px;
+  transition: all 500ms;
+  border: 1px solid var(--main);
+  text-transform: capitalize;
+  &:hover{
+    background-color: var(--white);
+    color: var(--main);
   }
-  .header h1{
-      color: var(--e-global-color-e777cd9);
-      font-family: Bold-DM-Sans;
-      font-size: 65px;
-      font-weight: 500;
-      line-height: 80px;
-      letter-spacing: -1px;
-      text-transform: capitalize;
-      &::after{
-          display: none;
-      }
+}
+.BigSecImg .card-body h2{
+    color: var(--black);
+    font-family: Bold-fira;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.BigSecImg .card-body p{
+    color: var(--black);
+    font-family: Regular-Open-sans;
+    font-size: 14px;
+}
+.BigSecImg .bottom-card {
+  background-color: var(--gray);
+  width: 100%;
+  text-align: center;
+  margin-top: 1px;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.BigSecImg .bottom-card i{
+    color: var(--main);
+    margin-inline-end: 10px;
+    font-size: 16px;
+}
+.BigSecImg .bottom-card span{
+    color: rgba(0, 0, 0, .4);
+    font-size: 14px;
+    font-family: Regular-Open-sans;
+    transition: all 500ms;
+    cursor: pointer;
+    &:hover{
+        color: var(--black);
+    }
+}
+.BigSecImg .card-img {
+  overflow: hidden;
+}
+.BigSecImg img {
+  height: 607px;
+  transition: all 500ms;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
   }
-/* ************************************************* */
-.last-section .sec-p{
-    color: var(--e-global-color-text) !important;
-    font-size: 16px !important;
-    font-family: Regular-inter !important;
 }
-/* **************************************************** */
-.before-footer{
-    background-image: none;
-    background-color: var(--e-global-color-cff305b);
-}
-.before-footer h2{
-    color: var(--e-global-color-text);
-}
+/* End BigSecImg */
+/***************************/

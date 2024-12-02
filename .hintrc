@@ -3,20 +3,33 @@
     "development"
   ],
   "hints": {
-    "detect-css-reflows/composite": "off",
-    "detect-css-reflows/layout": "off",
-    "detect-css-reflows/paint": "off",
-    "axe/structure": [
-      "default",
-      {
-        "list": "off",
-        "listitem": "off"
-      }
-    ],
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
+        "link-name": "off",
+        "button-name": "off"
+      }
+    ],
+    "button-type": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]",
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
+        ]
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
       }
     ]
   }

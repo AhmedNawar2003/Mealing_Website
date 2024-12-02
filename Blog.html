@@ -7,20 +7,16 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <link
-      rel="shortcut icon"
-      href="img/apple-touch-icon-72x72-precomposed-ea6fb08063069270d41814bdcea6a36fee5fffaba8ec1f0be6ccf3ebbb63dddb.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="css/Blog.css" />
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#" title="Mulk-logo">
-            <img src="img/logo.webp" alt="" />
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -32,18 +28,18 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon">
-              <i class="fa-light fa-bars"></i>
+              <i class="fa-solid fa-bars"></i>
             </span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">portfolio</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -54,211 +50,399 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  pages
+                  Products
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="About.html">About</a></li>
+                  <li><a class="dropdown-item" href="shop.html">Shop</a></li>
                   <li>
-                    <a class="dropdown-item" href="service.html">service</a>
+                    <a class="dropdown-item" href="login.html">My account</a>
                   </li>
-                  <li>
-                    <a class="dropdown-item" href="singlePost.html"
-                      >Single post</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="Blog.html">Blog</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">contact</a>
-              </li>
             </ul>
-            <button
-              class="btn toggle-right"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-              title="toggle"
-            >
-              <i class="fa-light fa-bars"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasRight"
-              aria-labelledby="offcanvasRightLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="logo-img">
-                  <img src="img/mulk-logo.webp" alt="" />
-                </div>
-                <ul>
-                  <a href="portfolio.html"><li>portfolio</li></a>
-                  <a href="About.html"><li>About</li></a>
-                  <a href="service.html"><li>services</li></a>
-                  <a href="Blog.html" class="active"><li>Blog</li></a>
-                  <a href="contact.html"><li>contact</li></a>
-                </ul>
-                <div class="icons">
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-              </div>
-            </div>
+            <form class="d-flex form">
+              <p></p>
+              <a class="btn" type="submit" id="menuBtn" href="shop.html"
+                >Get Menu</a
+              >
+              <a href="login.html"><i class="fa-thin fa-solid fa-user"></i></a>
+              <a href="cart.html"
+                ><i id="shop-cart" class="fa-thin fa-bag-shopping"></i
+              ></a>
+              <span id="cartNum">0</span>
+            </form>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card card-h1">
-              <h1>Blog</h1>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <!-- End header -->
-
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- start last-section -->
-    <section class="last-section">
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- start home -->
+    <section class="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card align-items-center">
+              <h1>Blog</h1>
+              <p><a href="index.html">Home</a> &nbsp; | &nbsp; Blog</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////// -->
+    <!-- start BigSecImg -->
+    <section class="BigSecImg">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img
-                        src="img/mildlee-7KKy7-TeeVs-unsplash-1536x1024.webp"
-                        alt=""
-                      />
-                      <div class="number">20 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>What Makes Good Design?: Elements and Principles</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_23-1150x720.jpg" alt="" />
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img src="img/novel-1536x1024.webp" alt="" />
-                      <div class="number">20 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>Creative Content Marketing Ideas for Your Website</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutritionist</a>
+                    <h2>How many calories an adult needs per day</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img
-                        src="img/keagan-henman-ZqXXVeRCyZ0-unsplash-1536x1025.webp"
-                        alt=""
-                      />
-                      <div class="number">20 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>How to Choose the Right Colors for Your Brand</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img src="img/black square.webp" alt="" />
-                      <div class="number">20 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>Creative Marketing Ideas to Boost Your Business</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_24-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutritionist</a>
+                    <h2>Best products for fitness nutrition and muscles</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img src="img/basketball.webp" alt="" />
-                      <div class="number">17 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>Simple Steps for a Brand Building Process</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_01-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutritionist</a>
+                    <h2>Best products for fitness nutrition and muscles</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="card">
-                    <div class="card-img">
-                      <img src="img/gls-1536x1024.webp" alt="" />
-                      <div class="number">17 Oct</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="first-div">
-                        Business&nbsp; / &nbsp;Socio Lib
-                      </div>
-                      <p>Cool and Catchy Small Business Name Ideas</p>
-                      <p class="sec-p mt-3">
-                        Catchy Small Business Name Ideas Lorem ipsum dolor sit
-                        amet, consectetur adipi
-                      </p>
-                    </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_02-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutritionist</a>
+                    <h2>How many calories an adult needs per day</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_03-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutrition</a>
+                    <h2>The benefits of fish and seafood for digestion</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_04-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutrition</a>
+                    <h2>Salads. great article with recipes.</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_05-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">fitness</a>
+                    <h2>Vegetarian food – is it healthy?</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_06-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">vegetarian</a>
+                    <h2>Green tea for weight loss: truth and myths</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_08-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Healthy Food</a>
+                    <h2>Simple and delicious vegetarian recipes</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="img/blog_09-1150x720.jpg" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn">Slimming</a>
+                    <h2>Proper nutrition vs diet</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutrition</a>
+                    <h2>Muscle gain nutrition</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <a href="#" class="btn">Nutrition</a>
+                    <h2>Principles of fractional nutrition</h2>
+                    <p>
+                      Morbi volutpat nisi a ligula vestibulum placerat.
+                      Suspendisse venenatis pulvinar nibh sed convallis. Cras
+                      elementum nunc a purus sodales tincidunt. Duis fringilla
+                      quam at tellus consectetur, id placerat metus tincidunt.
+                      In tellus mauris, pellentesque ac est sed, vestibulum
+                      hendrerit felis. Pellentesque molestie lorem id placerat
+                      condimentum. Intege …
+                    </p>
+                  </div>
+                  <div class="bottom-card">
+                    <span
+                      ><i class="fa-thin fa-calendar-days"></i>November 2,
+                      2019</span
+                    >
+                    <span
+                      ><i class="fa-thin fa-comment-dots"></i>0 comments</span
+                    >
                   </div>
                 </div>
               </div>
@@ -267,73 +451,76 @@
         </div>
       </div>
     </section>
-    <!-- //////////////////////////////////////////////////////////////// -->
-    <section class="before-footer">
-      <div class="container">
-        <div class="row align-items-baseline">
-          <div class="col-6">
-            <div class="card">
-              <h2>Join our circle to get updates</h2>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <a href="#" class="btn"
-                >subscribe <i class="fa-light fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /////////////////////////////////////////////////////////////// -->
+    <!-- End BigSecImg -->
+    <!-- ///////////////////////////////////////////////////////////// -->
     <!-- start footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
-              <div class="logo">
-                <img src="img/logo.webp" alt="" />
+              <div class="img">
+                <img src="img/logo-white.png" alt="" />
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>
+                Integer maximus accumsan nunc, sit amet tempor lectus facilisis
+                eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam
+                varius.
+              </p>
               <div class="icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <h6>Office</h6>
-              <p>Amphitheatre Parkway, Mountain View, California, 94043</p>
-              <a class="first-a"
-                ><i class="fa-thin fa-envelope"></i>mail@mulk.agency</a
-              >
-              <a class="second-a"
-                ><i class="fa-thin fa-phone"></i>+123 456 789</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Menu</h6>
-              <ul class="first-ul">
-                <li>services</li>
-                <li>features</li>
-                <li>pricing</li>
-                <li>testimonials</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card align-items-center">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="Blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="shop.html">Products</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="contact.html">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="card card-4">
-              <h6>Links</h6>
-              <ul class="first-ul">
-                <li>About Us</li>
-                <li>contact</li>
-                <li>Help center</li>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <h3>Contact info</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-location-dot"></i>
+                  <span>
+                    <strong>Our location:</strong><br />
+                    Goldschmidtstraße 13, 04103 Leipzig
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-thin fa-phone"></i>
+                  <span>
+                    <strong>Phone:</strong><br />
+                    +49078-039-23-11<br />
+                    +49078-028-55-60
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -341,8 +528,17 @@
       </div>
     </footer>
     <!-- End footer -->
-    <!-- //////////////////////////////////////////////////////////// -->
+    <!-- ///////////////////////// -->
+    <!-- side btn -->
+    <button class="btn btn-info" id="upToHome">
+      <i class="fa-thin fa-arrow-up"></i>
+    </button>
+    <!-- End side btn -->
+    <!-- ///////////////////// -->
+    <!-- script links -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

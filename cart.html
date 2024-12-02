@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                  <li>
+                    <a class="dropdown-item" href="login.html">My account</a>
+                  </li>
+                  <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+            </ul>
+            <form class="d-flex form">
+              <p></p>
+              <a class="btn" type="submit" id="menuBtn" href="shop.html"
+                >Get Menu</a
+              >
+              <a href="login.html"><i class="fa-thin fa-solid fa-user"></i></a>
+              <a href="cart.html"
+                ><i id="shop-cart" class="fa-thin fa-bag-shopping"></i
+              ></a>
+              <span id="cartNum">0</span>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+    <!-- ///////////////////////////////////////////////////////////////// -->
+    <!-- start home -->
+    <section class="home">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card align-items-center">
+              <h1>Cart</h1>
+              <p><a href="index.html">Home</a> &nbsp; | &nbsp; cart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /////////////////////////////////////////////////////////// -->
+    <section class="cart-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-p">
+                <p>
+                  <i class="fa-light fa-calendar-xmark"></i>Your cart is
+                  currently empty.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <a href="shop.html" class="btn">Return to shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////// -->
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <div class="img">
+                <img src="img/logo-white.png" alt="" />
+              </div>
+              <p>
+                Integer maximus accumsan nunc, sit amet tempor lectus facilisis
+                eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam
+                varius.
+              </p>
+              <div class="icons">
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-square-youtube"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card align-items-center">
+              <h3>Explore</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="index.html">Home</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="Blog.html">Blog</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="shop.html">Products</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="about.html">About</a>
+                </li>
+                <li>
+                  <i class="fa-thin fa-angle-right"></i
+                  ><a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card">
+              <h3>Contact info</h3>
+              <ul>
+                <li>
+                  <i class="fa-thin fa-location-dot"></i>
+                  <span>
+                    <strong>Our location:</strong><br />
+                    Goldschmidtstraße 13, 04103 Leipzig
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-thin fa-phone"></i>
+                  <span>
+                    <strong>Phone:</strong><br />
+                    +49078-039-23-11<br />
+                    +49078-028-55-60
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- ///////////////////////// -->
+    <!-- side btn -->
+    <button class="btn btn-info" id="upToHome">
+      <i class="fa-thin fa-arrow-up"></i>
+    </button>
+    <!-- End side btn -->
+    <!-- ///////////////////// -->
+    <!-- script links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+\    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
